@@ -1,0 +1,34 @@
+{
+  "name": "kxapi-helloworld",
+  "version": "0.0.2",
+  "description": "kxapi-helloworld",
+  "scripts": {
+    "build": "npm run build-ts && npm run tslint",
+    "watch-ts": "concurrently \"kxapi watch\" \"tsc -w\"",
+    "build-ts": " tsc",
+    "tslint": "tslint -c tslint.json -p tsconfig.json",
+    "tslint:fix": "tslint --fix -c tslint.json -p tsconfig.json"
+  },
+  "author": "pengxiang",
+  "license": "ISC",
+  "main": "./dist/index.js",
+  "types": "index.d.ts",
+  "files": [
+    "dist",
+    "index.d.ts"
+  ],
+  "pre-commit": [
+    "tslint"
+  ],
+  "dependencies": {
+    "@nxapi/kxapi": "0.0.6"
+  },
+  "devDependencies": {
+    "@babel/plugin-transform-async-to-generator": "^7.7.0",
+    "pre-commit": "^1.2.2",
+    "tslint": "^5.20.0",
+    "tslint-config-airbnb": "^5.11.2",
+    "typescript": "^3.4.5",
+    "concurrently": "^3.5.1"
+  }
+}
