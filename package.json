@@ -1,7 +1,7 @@
 {
-  "name": "kxapi-helloworld",
+  "name": "@nxapi/kxapi-helloworld",
   "version": "0.0.2",
-  "description": "kxapi-helloworld",
+  "description": "@nxapi/kxapi-helloworld",
   "scripts": {
     "build": "npm run build-ts && npm run tslint",
     "watch-ts": "concurrently \"kxapi watch\" \"tsc -w\"",
@@ -21,7 +21,7 @@
     "tslint"
   ],
   "dependencies": {
-    "@nxapi/kxapi": "0.0.6"
+    "@nxapi/kxapi": "0.0.7"
   },
   "devDependencies": {
     "@babel/plugin-transform-async-to-generator": "^7.7.0",

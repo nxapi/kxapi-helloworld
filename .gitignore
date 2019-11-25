@@ -47,3 +47,4 @@ yarn.lock
 
 src/__tmp__
 src/types/service.d.ts
+static/swagger

@@ -1,11 +1,11 @@
 import Koa from 'koa';
 import router from './router';
-// import joiValidate from './joi';
+const kxapiSwaggerUi = require('@nxapi/kxapi-swagger-ui');
 const bodyParser = require('koa-bodyparser');
 
 const app = new Koa();
 app.use(bodyParser());
-// app.use(joiValidate());
+kxapiSwaggerUi(app);
 app.use(router().routes());
 
 // app.use(async ctx => {
