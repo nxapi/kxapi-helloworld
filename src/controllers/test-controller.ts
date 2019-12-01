@@ -7,7 +7,7 @@ import BaseResponse from './dto/base-response';
 export default class TestController extends BaseController {
   @d.function.description('ddddddd')
   @d.function.get('/hello')
-  public ggg(req: TestReq): BaseResponse<TestDto> {
+  public ggg(req: string, rr: number): BaseResponse<TestDto> {
     this.service.test3Service.test();
     return null;
   }
