@@ -1,6 +1,6 @@
 {
   "name": "@nxapi/kxapi-helloworld",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "description": "@nxapi/kxapi-helloworld",
   "scripts": {
     "build": "npm run build-ts && npm run tslint",
@@ -11,17 +11,11 @@
   },
   "author": "pengxiang",
   "license": "ISC",
-  "main": "./dist/index.js",
-  "types": "index.d.ts",
-  "files": [
-    "dist",
-    "index.d.ts"
-  ],
   "pre-commit": [
     "tslint"
   ],
   "dependencies": {
-    "@nxapi/kxapi": "^0.1.0"
+    "@nxapi/kxapi": "^0.1.1"
   },
   "devDependencies": {
     "@babel/plugin-transform-async-to-generator": "^7.7.0",
